@@ -18,4 +18,4 @@ RUN apt-get update &&\
 VOLUME /var/lib/zookeeper /etc/zookeeper
 
 EXPOSE 2181 2888 3888
-CMD ["zookeeper-server"]
+CMD ["zookeeper-server", "start-foreground"]
